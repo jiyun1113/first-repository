@@ -3,7 +3,7 @@ def maxProfit_bruteforce (prices):
 
    for i, price in enumerate(prices):
        for j in range(i, len(prices)):
-           max_price = max(prices[j] - price, max_price)
+           min_price = min(prices[j] - price, min_price)
 
    return
 
